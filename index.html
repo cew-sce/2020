@@ -21,8 +21,8 @@
       <form action="/action_page.php">
     <label for="YesNo">Yes or no? </label>
     <input type="text" name="YesNo"><br><br>
-  <input type="hidden" name="first">
-      <input type="hidden" name="org">
+        <input type="hidden" name="first" value="<script>document.write(first)</script>">
+      <input type="hidden" name="org" value="<script>document.write(org)</script>">
   <input type="submit" value="Submit">
 </form>
   
