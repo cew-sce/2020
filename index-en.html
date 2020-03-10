@@ -36,7 +36,7 @@
             <a class="nav-link js-scroll-trigger" href="#services">Register</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#greening">Learn More</a>
           </li>
         </ul>
       </div>
@@ -72,83 +72,62 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Register now</h2>
-          <form class="form-horizontal">
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='/thanks.html';}"></iframe>
+          <form action="" target="hidden_iframe" method="POST" id="mG61Hd">
             <fieldset>
-
-              <!-- Form Name -->
-              <legend>Form Name</legend>
-
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">Text Input</label>
+              <!-- Form -->
+              <div class="form-group row">
+                <label class="col-md-4 control-label" for="entry.786939657">What is your name?</label>
+                <div class="col-md-6">
+                  <input id="name" name="entry.786939657" style="width: 60%;" type="text" placeholder="" class="form-control input-md">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 control-label" for="entry.1119766970">What is your email address?</label>
+                <div class="col-md-6">
+                  <input id="email" style="width: 60%;" name="entry.1119766970" type="text" placeholder="@tc.gc.ca" class="form-control input-md">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 control-label" for="entry.1559681706e">What is your team's name (if you are completing this as a group)?</label>
+                <div class="col-md-6">
+                  <input id="email" style="width: 60%;" name="entry.1559681706" type="text" placeholder="" class="form-control input-md">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 control-label" for="entry.2006413610">In which group do you work in?</label>
                 <div class="col-md-4">
-                  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-                  <span class="help-block">help</span>
+                  <select id="org" name="entry.2006413610" class="form-control">
+                                    <option hidden disabled selected value> -- Select a group/region -- </option> 
+                                    <option value="Audit and Evaluation">Audit and Evaluation</option>
+                                    <option value="Communications">Communications</option>
+                                    <option value="Corporate Services">Corporate Services</option>
+                                    <option value="DSTO">Digital Services and Transformation Office</option><option value="Safety and Security Group">Safety and Security Group</option>
+                                    <option value="OPP">Oceans Protection Plan Office</option>
+                                    <option value="Policy Group">Policy Group</option>
+                                    <option value="Programs Group">Programs Group</option>
+                                                           
+                                    <option value="Atlantic Region">Atlantic Region</option>
+                                    <option value="Ontario Region">Ontario Region</option>
+                                    <option value="Pacific Region">Pacific Region</option>
+                                    <option value="Prairie and Northern Region">Prairie and Northern Region</option>
+                                    <option value="Quebec Region">Quebec Region</option>
+                                </select>
                 </div>
               </div>
-
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">Text Input</label>
-                <div class="col-md-4">
-                  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-                  <span class="help-block">help</span>
-                </div>
-              </div>
-
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">Text Input</label>
-                <div class="col-md-4">
-                  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-                  <span class="help-block">help</span>
-                </div>
-              </div>
-
-              <!-- Select Basic -->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="selectbasic">Select Basic</label>
-                <div class="col-md-4">
-                  <select id="selectbasic" name="selectbasic" class="form-control">
-      <option value="1">Option one</option>
-      <option value="2">Option two</option>
-    </select>
-                </div>
-              </div>
-
-              <!-- Select Basic -->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="selectbasic">Select Basic</label>
-                <div class="col-md-4">
-                  <select id="selectbasic" name="selectbasic" class="form-control">
-      <option value="1">Option one</option>
-      <option value="2">Option two</option>
-    </select>
-                </div>
-              </div>
-
-              <!-- Button (Double) -->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="button1id">Double Button</label>
-                <div class="col-md-8">
-                  <button id="button1id" name="button1id" class="btn btn-success">Good Button</button>
-                  <button id="button2id" name="button2id" class="btn btn-danger">Scary Button</button>
-                </div>
-              </div>
-
-            </fieldset>
-          </form>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="greening">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Contact us</h2>
-          <p class="lead">Centre for Greening Governement, TBS</p>
+          <h2>Learn More</h2>
+          <p class="lead">
+            <a href="https://www.canada.ca/en/treasury-board-secretariat/services/innovation/greening-government.html">Learn more about how we are greening government on Canada.ca!</a>
+          </p>
         </div>
       </div>
     </div>
