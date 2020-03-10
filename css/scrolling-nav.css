@@ -10,3 +10,13 @@ header {
 section {
   padding: 150px 0;
 }
+
+.bg-primary {
+
+  background-image: url("https://www.gcpedia.gc.ca/gcwiki/images/e/e1/EnviroWeek-background.png");
+}
+
+.text-white {
+  font-weight: bold;
+}
+
