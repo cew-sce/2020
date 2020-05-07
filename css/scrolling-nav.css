@@ -23,3 +23,6 @@ section {
 section {
     padding: 75px 0;
 }
+
+.bg-primary {
+background-color: #d0eafa !important;
