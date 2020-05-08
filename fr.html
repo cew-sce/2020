@@ -346,7 +346,9 @@
                 </div>
               </div>
               <button class="btn btn-md btn-success mrgn-tp-md" type="submit" id="submit-form">Je m'inscris!</button>
-        </div>
+              <button class="btn btn-md btn-danger mrgn-tp-md" type="reset" value="Reset">Effacer le formulaire</button>
+              <div id="myDIV"></div>
+          </div>
       </div>
     </div>
   </section>
@@ -384,7 +386,16 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
-
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "") {
+    x.innerHTML = "<b>Nous avons reçu votre inscription. À bientôt!</b>";
+  } else {
+    x.innerHTML = "";
+  }
+}
+</script>
 </body>
 
 </html>
