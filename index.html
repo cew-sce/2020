@@ -345,7 +345,8 @@
                                  </select>
                 </div>
               </div>
-              <button class="btn btn-md btn-success mrgn-tp-md" type="submit" id="submit-form">Register</button>
+              <button class="btn btn-md btn-success mrgn-tp-md" type="submit" id="submit-form" onclick="myFunction()">Register</button>
+              <div id="myDIV"><b>Your registration is in. See you soon!</b></div>
         </div>
       </div>
     </div>
@@ -384,7 +385,15 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
-
+<script>
+      function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} </script>
 </body>
 
 </html>
