@@ -320,7 +320,20 @@
                     </label>
                 </div>
               </div>
-              <button class="btn btn-md btn-success mrgn-tp-md" type="submit" id="submit-form" onclick="myFunction()">Register</button>
+                            <div class="form-group row">
+                <label class="col-md-10 control-label" for="q3">Q3.	The wild hyacinth (Camassia scilloides) is a threatened vascular plant. Can you identify what it looks like? </label>
+                <div class="col-md-2">
+                  <label class="radio-inline" for="q3">
+                     <input type="radio" name="q3" id="q3" value="25">
+                      Yes
+                     </label>
+                  <label class="radio-inline" for="q3">
+                     <input type="radio" name="radios" id="q3" value="0">
+                      No
+                    </label>
+                </div>
+              </div>
+              <button class="btn btn-md btn-success mrgn-tp-md" type="submit" id="submit-form" onclick="myFunction()">Submit your answers</button>
               <button class="btn btn-md btn-danger mrgn-tp-md" type="reset" value="Reset">Clear the form</button>
               <div id="myDIV"></div>
         </div>
@@ -365,7 +378,7 @@
     function myFunction() {
       var x = document.getElementById("myDIV");
       if (x.innerHTML === "") {
-        x.innerHTML = "<b>Your registration is in. See you soon!</b>";
+        x.innerHTML = "<b>Your answers are in. See you tomorrow!</b>";
       } else {
         x.innerHTML = "";
       }
