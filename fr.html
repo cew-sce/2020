@@ -15,7 +15,19 @@
 
   <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
 
+
+  <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+
+  <script type="text/javascript" class="init">
+    $(document).ready(function() {
+      $('#example').DataTable();
+    });
+  </script>
 </head>
 
 <body id="page-top">
@@ -35,7 +47,7 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">S'inscrire</a>
           </li>
-                    <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="supporttech.html">J'ai besoin d'aide</a>
           </li>
           <li class="nav-item">
@@ -71,7 +83,7 @@
   <section id="about">
     <div class="container">
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-5">
           <h2>À propos du défi écologique</h2>
           <p class="lead">Le <strong>défi écologique</strong> est de retour - les participants recevront chaque jour une série de défis verts et se verront attribuer des points en fonction des actions entreprises. Cette année, il a été adapté à la réalité du travail
             à domicile et comprend des liens vers des activités qui pourraient intéresser toute la famille.</p>
@@ -81,128 +93,389 @@
             et l'organisation qui aura récolté le plus de points à la fin de la semaine sera reconnue comme la championne de l'écologisation!</p>
 
           </p>
-        <p class="lead">
-          <strong>Le lundi 1er juin à midi, vous étiez 1 700 employés fédéraux de 55 organisations à vous être inscrit au défi. Merci !</strong>
-        </p>
+          <p class="lead">
+            <strong>Le lundi 1er juin à midi, vous étiez 1 700 employés fédéraux de 55 organisations à vous être inscrit au défi. Merci !</strong>
+          </p>
         </div>
-      <div class="col-md-5">
-        <h2>
-          Tableau des meneurs
-        </h2>
-        <table class="table-striped">
-<tbody>
-<tr>
-<th>Organisations</th>
-<th>Participants</th>
-</tr>
-<tr>
-<td>Anciens Combattants Canada</td>
-<td>217</td>
-</tr>
-<tr>
-<td>Bureau du v&eacute;rificateur g&eacute;n&eacute;ral du Canada</td>
-<td>177</td>
-</tr>
-<tr>
-<td>Sant&eacute; Canada</td>
-<td>142</td>
-</tr>
-<tr>
-<td>Services publics et approvisionnements Canada</td>
-<td>118</td>
-</tr>
-<tr>
-<td>Finances Canada</td>
-<td>111</td>
-</tr>
-<tr>
-<td>Secr&eacute;tariat du Conseil du Tr&eacute;sor du Canada</td>
-<td>93</td>
-</tr>
-<tr>
-<td>Affaires mondiales Canada</td>
-<td>87</td>
-</tr>
-<tr>
-<td>Environnement et Changements climatiques Canada</td>
-<td>86</td>
-</tr>
-<tr>
-<td>Immigration, R&eacute;fugi&eacute;s et Citoyennet&eacute; Canada</td>
-<td>67</td>
-</tr>
-<tr>
-<td>Biblioth&egrave;que et archives Canada</td>
-<td>61</td>
-</tr>
-<tr>
-<td>Agence de la sant&eacute; publique du Canada</td>
-<td>58</td>
-</tr>
-<tr>
-<td>Services partag&eacute;s Canada</td>
-<td>53</td>
-</tr>
-<tr>
-<td>Agence canadienne d'inspection des aliments</td>
-<td>52</td>
-</tr>
-<tr>
-<td>Minist&egrave;re de la d&eacute;fense nationale</td>
-<td>47</td>
-</tr>
-<tr>
-<td>Minist&egrave;re des P&ecirc;ches et Oc&eacute;ans</td>
-<td>47</td>
-</tr>
-<tr>
-<td>Innovation, Sciences et D&eacute;veloppement &eacute;conomique Canada</td>
-<td>43</td>
-</tr>
-<tr>
-<td>Agence spatiale canadienne</td>
-<td>33</td>
-</tr>
-<tr>
-<td>Transports Canada</td>
-<td>27</td>
-</tr>
-<tr>
-<td>Ressources naturelles Canada</td>
-<td>20</td>
-</tr>
-<tr>
-<td>Parcs Canada</td>
-<td>19</td>
-</tr>
-<tr>
-<td>Commission de la Capitale nationale</td>
-<td>17</td>
-</tr>
-<tr>
-<td>Garde coti&egrave;re du Canada</td>
-<td>16</td>
-</tr>
-<tr>
-<td>Patrimoine canadien</td>
-<td>11</td>
-</tr>
-<tr>
-<td>Centre national de recherche du Canada</td>
-<td>10</td>
-</tr>
-<tr>
-<td>Insfrastructures Canada</td>
-<td>8</td>
-</tr>
-<tr>
-<td>Construction de d&eacute;fense Canada</td>
-<td>8</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
-      </div>
+        <div class="col-md-7">
+          <h2>
+            Tableau des meneurs
+          </h2>
+          <table id="example" class="display compact" width="100%">
+            <thead>
+              <tr>
+                <th>Organisations</th>
+                <th>Pts totaux</th>
+                <th>Pts/Parts</th>
+                <th>Parts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Parcs Canada</td>
+                <td>32500</td>
+                <td>113</td>
+                <td>287</td>
+              </tr>
+              <tr>
+                <td>Anciens Combattants Canada</td>
+                <td>24350</td>
+                <td>105</td>
+                <td>231</td>
+              </tr>
+              <tr>
+                <td>V&eacute;rificateur g&eacute;n&eacute;ral du Canada (Bureau du)</td>
+                <td>21750</td>
+                <td>120</td>
+                <td>181</td>
+              </tr>
+              <tr>
+                <td>Sant&eacute; Canada</td>
+                <td>16400</td>
+                <td>109</td>
+                <td>151</td>
+              </tr>
+              <tr>
+                <td>Finances Canada (Minist&egrave;re des)</td>
+                <td>15550</td>
+                <td>121</td>
+                <td>129</td>
+              </tr>
+              <tr>
+                <td>Services publics et march&eacute;s publics Canada</td>
+                <td>13400</td>
+                <td>110</td>
+                <td>122</td>
+              </tr>
+              <tr>
+                <td>Secr&eacute;tariat du Conseil du Tr&eacute;sor du Canada</td>
+                <td>11800</td>
+                <td>113</td>
+                <td>104</td>
+              </tr>
+              <tr>
+                <td>Environnement et changement climatique Canada</td>
+                <td>12200</td>
+                <td>120</td>
+                <td>102</td>
+              </tr>
+              <tr>
+                <td>Affaires mondiales Canada</td>
+                <td>11000</td>
+                <td>110</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Immigration, r&eacute;fugi&eacute;s et citoyennet&eacute; Canada</td>
+                <td>7275</td>
+                <td>107</td>
+                <td>68</td>
+              </tr>
+              <tr>
+                <td>Biblioth&egrave;que et Archives Canada</td>
+                <td>7950</td>
+                <td>119</td>
+                <td>67</td>
+              </tr>
+              <tr>
+                <td>Agence canadienne d'inspection des aliments</td>
+                <td>6675</td>
+                <td>101</td>
+                <td>66</td>
+              </tr>
+              <tr>
+                <td>Services partag&eacute;s Canada</td>
+                <td>6000</td>
+                <td>100</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td>Agence de la sant&eacute; publique du Canada</td>
+                <td>6000</td>
+                <td>103</td>
+                <td>58</td>
+              </tr>
+              <tr>
+                <td>Innovation, science et d&eacute;veloppement &eacute;conomique Canada</td>
+                <td>6200</td>
+                <td>119</td>
+                <td>52</td>
+              </tr>
+              <tr>
+                <td>P&ecirc;ches et Oc&eacute;ans Canada</td>
+                <td>5450</td>
+                <td>105</td>
+                <td>52</td>
+              </tr>
+              <tr>
+                <td>Transports Canada</td>
+                <td>5575</td>
+                <td>109</td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>D&eacute;fense nationale</td>
+                <td>5550</td>
+                <td>109</td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>Agence spatiale canadienne</td>
+                <td>3675</td>
+                <td>111</td>
+                <td>33</td>
+              </tr>
+              <tr>
+                <td>Construction de D&eacute;fense Canada</td>
+                <td>3150</td>
+                <td>117</td>
+                <td>27</td>
+              </tr>
+              <tr>
+                <td>Ressources naturelles Canada</td>
+                <td>2225</td>
+                <td>111</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Commission de la capitale nationale</td>
+                <td>1700</td>
+                <td>100</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>Garde c&ocirc;ti&egrave;re canadienne</td>
+                <td>1575</td>
+                <td>98</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>Conseil national de recherches Canada</td>
+                <td>975</td>
+                <td>75</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Tribunal des anciens combattants (r&eacute;vision et appel)</td>
+                <td>1425</td>
+                <td>130</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>Patrimoine canadien</td>
+                <td>1400</td>
+                <td>127</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>Infrastructure Canada</td>
+                <td>1100</td>
+                <td>110</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Autre</td>
+                <td>675</td>
+                <td>75</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>Emploi et d&eacute;veloppement social Canada</td>
+                <td>925</td>
+                <td>116</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Agriculture et Agroalimentaire Canada</td>
+                <td>950</td>
+                <td>119</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Agence f&eacute;d&eacute;rale de d&eacute;veloppement &eacute;conomique pour le Sud de l'Ontario</td>
+                <td>525</td>
+                <td>75</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>Service correctionnel du Canada</td>
+                <td>725</td>
+                <td>104</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>Office de la propri&eacute;t&eacute; intellectuelle du Canada</td>
+                <td>625</td>
+                <td>104</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>M&eacute;diateur des v&eacute;t&eacute;rans (Bureau du)</td>
+                <td>675</td>
+                <td>169</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Bureau de la traduction</td>
+                <td>675</td>
+                <td>169</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Service Canada</td>
+                <td>425</td>
+                <td>106</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Comit&eacute; externe d'examen des griefs militaires</td>
+                <td>550</td>
+                <td>138</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Mesures Canada</td>
+                <td>350</td>
+                <td>117</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Agence canadienne d'&eacute;valuation de l'impact</td>
+                <td>350</td>
+                <td>117</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>S&eacute;curit&eacute; publique Canada</td>
+                <td>150</td>
+                <td>75</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Services autochtones Canada</td>
+                <td>150</td>
+                <td>75</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Commission de l'immigration et du statut de r&eacute;fugi&eacute; du Canada</td>
+                <td>275</td>
+                <td>138</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Postes Canada</td>
+                <td>150</td>
+                <td>75</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Arm&eacute;e canadienne</td>
+                <td>450</td>
+                <td>225</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Jeunesse</td>
+                <td>200</td>
+                <td>200</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Diversification de l'&eacute;conomie de l'Ouest Canada</td>
+                <td>125</td>
+                <td>125</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Femmes et &eacute;galit&eacute; des genres Canada</td>
+                <td>75</td>
+                <td>75</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Marine royale canadienne</td>
+                <td>75</td>
+                <td>75</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Gendarmerie royale du Canada</td>
+                <td>75</td>
+                <td>75</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Aviation royale du Canada</td>
+                <td>175</td>
+                <td>175</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Surintendant des faillites Canada (Bureau du)</td>
+                <td>75</td>
+                <td>75</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Commissaire &agrave; l'information (Bureau du)</td>
+                <td>75</td>
+                <td>75</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Tribunal de la sant&eacute; et de la s&eacute;curit&eacute; au travail Canada</td>
+                <td>75</td>
+                <td>75</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Commission des lieux et monuments historiques du Canada</td>
+                <td>75</td>
+                <td>75</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>&Eacute;cole de la fonction publique du Canada</td>
+                <td>125</td>
+                <td>125</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Conseil de la radiodiffusion et des t&eacute;l&eacute;communications canadiennes</td>
+                <td>75</td>
+                <td>75</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Bureau de la concurrence Canada</td>
+                <td>75</td>
+                <td>75</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Tribunal canadien du commerce ext&eacute;rieur</td>
+                <td>75</td>
+                <td>75</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Commission canadienne des droits de la personne</td>
+                <td>75</td>
+                <td>75</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Agence des services frontaliers du Canada</td>
+                <td>75</td>
+                <td>75</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
       </div>
     </div>
   </section>
@@ -213,7 +486,7 @@
         <div class="col-lg-8 mx-auto">
           <h2>Inscrivez-vous</h2>
           <p class="lead">
-            Votre ministère ou agence bloque-t-il les outils de la suite Google ? Si c'est le cas, vous pouvez toujours participer à partir de votre téléphone ou de votre ordinateur personnel en utilisant votre adresse électronique personnelle. Désolé pour le désagrément. 
+            Votre ministère ou agence bloque-t-il les outils de la suite Google ? Si c'est le cas, vous pouvez toujours participer à partir de votre téléphone ou de votre ordinateur personnel en utilisant votre adresse électronique personnelle. Désolé pour le désagrément.
           </p>
           <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='/thanks.html';}"></iframe>
           <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeb9qZOdJ9ubiJ2bBGHNiIP9QIOsiiEAKkHAPt7S5MD0Y_ZOA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd">
@@ -453,9 +726,9 @@
               <button class="btn btn-md btn-success mrgn-tp-md" type="submit" id="submit-form" onclick="myFunction()">Je m'inscris!</button>
               <button class="btn btn-md btn-danger mrgn-tp-md" type="reset" value="Reset">Effacer le formulaire</button>
               <div id="myDIV"></div>
-                          <br />
+              <br />
               <h4>
-                Vous avez des problèmes techniques avec le Défi écologique ? Vous n'avez reçu aucun courrier électronique de l'équipe du Défi écologique ? Veuillez consulter notre page d'<a href="supporttech.html">assistance technique</a>. 
+                Vous avez des problèmes techniques avec le Défi écologique ? Vous n'avez reçu aucun courrier électronique de l'équipe du Défi écologique ? Veuillez consulter notre page d'<a href="supporttech.html">assistance technique</a>.
               </h4>
         </div>
       </div>
