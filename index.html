@@ -28,489 +28,429 @@
       $('#example').DataTable();
     });
   </script>
-  </head>
-  <body id="page-top">
+</head>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Green Challenge 2020</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Green Challenge 2020</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="techsupport.html">I need assistance</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#greening">Get Involved</a>
-            </li>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="techsupport.html">I need assistance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#greening">Get Involved</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="fr.html">Français</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="fr.html">Français</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <img src="Canadian Environment Week.png" alt="Canadian Environment Week 2020 - Green Challenge" />
+    </div>
+  </header>
+
+  <section id="intro" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h1>Welcome to the Green Challenge 2020!</h1>
+          <h2>Celebrating Canadian Environment Week – how can you green your activities?</h2>
+          <p class="lead">
+            The <strong>Centre for Greening Government</strong> is proud to announce that the <strong>Green Challenge</strong> is coming back for a 4th year! You and your colleagues are invited to participate from June 1st-5th during Environment Week.</p>
         </div>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <header class="bg-primary text-white">
-      <div class="container text-center">
-        <img src="Canadian Environment Week.png" alt="Canadian Environment Week 2020 - Green Challenge" />
-      </div>
-    </header>
+  <section id="about">
+    <div class="container">
+      <div class="row">
 
-    <section id="intro" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h1>Welcome to the Green Challenge 2020!</h1>
-            <h2>Celebrating Canadian Environment Week – how can you green your activities?</h2>
-            <p class="lead">
-              The <strong>Centre for Greening Government</strong> is proud to announce that the <strong>Green Challenge</strong> is coming back for a 4th year! You and your colleagues are invited to participate from June 1st-5th during Environment Week.</p>
-          </div>
+        <div class="col-md-5">
+          <h2>About the Green Challenge</h2>
+          <p class="lead">The <strong>Green Challenge</strong> is back – participants will be given a set of green challenges each day and awarded points based on actions taken. This year it has been adapted for the work at home reality and includes links to activities
+            that could be of interest for the whole family.</p>
+          <p class="lead">Points will be awarded through an on-line tracking system based on participation, knowledge and actions to reduce our carbon footprint and green our activities. This year, the Green Challenge includes a different theme each day and questions
+            which you need to answer (honestly) in order to get the points available. </p>
+          <p class="lead">On the last day there will be a bonus question, and results will be announced on World Oceans Day (Monday June 8th, 2020). A number of departments and agencies across government are participating, and the organization who collects the most points
+            at the end of the week will be recognized as the green champion!</p>
+          <p class="lead">
+            <strong>As of Tuesday, June 2nd, 9 P.M., you were over 2,300 federal employees from 56 organizations to register to the challenge. Thank you!</strong>
+          </p>
+        </div>
+        <div class="col-md-7">
+          <h2>Leaderboard</h2>
+          <table id="example" class="display compact" width="100%">
+            <thead>
+              <tr>
+                <th>Organizations</th>
+                <th>Total Pts</th>
+                <th>Pts/Part.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Parks Canada</td>
+                <td>50800</td>
+                <td>139</td>
+              </tr>
+              <tr>
+                <td>Veterans Affairs Canada</td>
+                <td>32125</td>
+                <td>137</td>
+              </tr>
+              <tr>
+                <td>Auditor General of Canada (Office of the)</td>
+                <td>30150</td>
+                <td>166</td>
+              </tr>
+              <tr>
+                <td>Health Canada</td>
+                <td>21775</td>
+                <td>142</td>
+              </tr>
+              <tr>
+                <td>Finance Canada (Department of)</td>
+                <td>21425</td>
+                <td>166</td>
+              </tr>
+              <tr>
+                <td>Public Services and Procurement Canada</td>
+                <td>17850</td>
+                <td>146</td>
+              </tr>
+              <tr>
+                <td>Treasury Board of Canada Secretariat</td>
+                <td>16625</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>Environment and Climate Change Canada</td>
+                <td>17350</td>
+                <td>158</td>
+              </tr>
+              <tr>
+                <td>Global Affairs Canada</td>
+                <td>15025</td>
+                <td>149</td>
+              </tr>
+              <tr>
+                <td>Library and Archives Canada</td>
+                <td>11200</td>
+                <td>160</td>
+              </tr>
+              <tr>
+                <td>Immigration, Refugees and Citizenship Canada</td>
+                <td>9525</td>
+                <td>138</td>
+              </tr>
+              <tr>
+                <td>Canadian Food Inspection Agency</td>
+                <td>8700</td>
+                <td>128</td>
+              </tr>
+              <tr>
+                <td>Transport Canada</td>
+                <td>8000</td>
+                <td>133</td>
+              </tr>
+              <tr>
+                <td>Shared Services Canada</td>
+                <td>7700</td>
+                <td>128</td>
+              </tr>
+              <tr>
+                <td>Innovation, Science and Economic Development Canada</td>
+                <td>9100</td>
+                <td>152</td>
+              </tr>
+              <tr>
+                <td>Public Health Agency of Canada</td>
+                <td>7900</td>
+                <td>136</td>
+              </tr>
+              <tr>
+                <td>Fisheries and Oceans Canada</td>
+                <td>7700</td>
+                <td>133</td>
+              </tr>
+              <tr>
+                <td>National Defence</td>
+                <td>7500</td>
+                <td>144</td>
+              </tr>
+              <tr>
+                <td>Canadian Space Agency</td>
+                <td>4975</td>
+                <td>151</td>
+              </tr>
+              <tr>
+                <td>Defence Construction Canada</td>
+                <td>4275</td>
+                <td>158</td>
+              </tr>
+              <tr>
+                <td>Natural Resources Canada</td>
+                <td>2950</td>
+                <td>148</td>
+              </tr>
+              <tr>
+                <td>Federal Economic Development Agency for Southern Ontario</td>
+                <td>1350</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>National Research Council Canada</td>
+                <td>1275</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>National Capital Commission</td>
+                <td>2125</td>
+                <td>125</td>
+              </tr>
+              <tr>
+                <td>Canadian Coast Guard</td>
+                <td>1950</td>
+                <td>122</td>
+              </tr>
+              <tr>
+                <td>Veterans Review and Appeal Board</td>
+                <td>2025</td>
+                <td>184</td>
+              </tr>
+              <tr>
+                <td>Canadian Heritage</td>
+                <td>2175</td>
+                <td>198</td>
+              </tr>
+              <tr>
+                <td>Infrastructure Canada</td>
+                <td>1350</td>
+                <td>135</td>
+              </tr>
+              <tr>
+                <td>Other</td>
+                <td>675</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Agriculture and Agri-Food Canada</td>
+                <td>1375</td>
+                <td>153</td>
+              </tr>
+              <tr>
+                <td>Employment and Social Development Canada</td>
+                <td>1250</td>
+                <td>156</td>
+              </tr>
+              <tr>
+                <td>Correctional Service Canada</td>
+                <td>925</td>
+                <td>132</td>
+              </tr>
+              <tr>
+                <td>Canadian Intellectual Property Office</td>
+                <td>875</td>
+                <td>125</td>
+              </tr>
+              <tr>
+                <td>Measurement Canada</td>
+                <td>950</td>
+                <td>158</td>
+              </tr>
+              <tr>
+                <td>Veterans' Ombudsman (Office of the)</td>
+                <td>1125</td>
+                <td>225</td>
+              </tr>
+              <tr>
+                <td>Translation Bureau</td>
+                <td>1050</td>
+                <td>263</td>
+              </tr>
+              <tr>
+                <td>Service Canada</td>
+                <td>550</td>
+                <td>138</td>
+              </tr>
+              <tr>
+                <td>Military Grievances External Review Committee</td>
+                <td>800</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td>Indigenous Services Canada</td>
+                <td>300</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Impact Assessment Agency of Canada</td>
+                <td>475</td>
+                <td>158</td>
+              </tr>
+              <tr>
+                <td>Public Safety Canada</td>
+                <td>150</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Immigration and Refugee Board of Canada</td>
+                <td>400</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td>Canada Post</td>
+                <td>150</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Competition Bureau Canada</td>
+                <td>150</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Canadian Army</td>
+                <td>750</td>
+                <td>375</td>
+              </tr>
+              <tr>
+                <td>Youth</td>
+                <td>325</td>
+                <td>325</td>
+              </tr>
+              <tr>
+                <td>Western Economic Diversification Canada</td>
+                <td>175</td>
+                <td>175</td>
+              </tr>
+              <tr>
+                <td>Women and Gender Equality Canada</td>
+                <td>75</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Royal Canadian Navy</td>
+                <td>75</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Royal Canadian Mounted Police</td>
+                <td>75</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Royal Canadian Air Force</td>
+                <td>75</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Superintendent of Bankruptcy Canada (Office of the)</td>
+                <td>75</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Information Commissioner (Office of the)</td>
+                <td>75</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Occupational Health and Safety Tribunal Canada</td>
+                <td>75</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Historic Sites and Monuments Board of Canada</td>
+                <td>75</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Canada School of Public Service</td>
+                <td>175</td>
+                <td>175</td>
+              </tr>
+              <tr>
+                <td>Canadian Radio-Television and Telecommunications Commission</td>
+                <td>75</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Canadian International Trade Tribunal</td>
+                <td>75</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Canadian Human Rights Commission</td>
+                <td>75</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Canada Border Services Agency</td>
+                <td>75</td>
+                <td>75</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </section>
+    </div>
+    </div>
+  </section>
 
-    <section id="about">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md-5">
-            <h2>About the Green Challenge</h2>
-            <p class="lead">The <strong>Green Challenge</strong> is back – participants will be given a set of green challenges each day and awarded points based on actions taken. This year it has been adapted for the work at home reality and includes links to activities
-              that could be of interest for the whole family.</p>
-            <p class="lead">Points will be awarded through an on-line tracking system based on participation, knowledge and actions to reduce our carbon footprint and green our activities. This year, the Green Challenge includes a different theme each day and questions
-              which you need to answer (honestly) in order to get the points available. </p>
-            <p class="lead">On the last day there will be a bonus question, and results will be announced on World Oceans Day (Monday June 8th, 2020). A number of departments and agencies across government are participating, and the organization who collects the most
-              points at the end of the week will be recognized as the green champion!</p>
-            <p class="lead">
-              <strong>As of Tuesday, June 2nd, noon, you were over 2,200 federal employees from 56 organizations to register to the challenge. Thank you!</strong>
-            </p>
-          </div>
-          <div class="col-md-7">
-            <h2>Leaderboard</h2>
-            <table id="example" class="display compact" width="100%">
-              <thead>
-                <tr>
-                  <th>Organizations</th>
-                  <th>Total Pts</th>
-                  <th>Pts/Part.</th>
-                  <th>Part.</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Parks Canada</td>
-                  <td>32500</td>
-                  <td>113</td>
-                  <td>287</td>
-                </tr>
-                <tr>
-                  <td>Veterans Affairs Canada</td>
-                  <td>24350</td>
-                  <td>105</td>
-                  <td>231</td>
-                </tr>
-                <tr>
-                  <td>Auditor General of Canada (Office of the)</td>
-                  <td>21750</td>
-                  <td>120</td>
-                  <td>181</td>
-                </tr>
-                <tr>
-                  <td>Health Canada</td>
-                  <td>16400</td>
-                  <td>109</td>
-                  <td>151</td>
-                </tr>
-                <tr>
-                  <td>Finance Canada (Department of)</td>
-                  <td>15550</td>
-                  <td>121</td>
-                  <td>129</td>
-                </tr>
-                <tr>
-                  <td>Public Services and Procurement Canada</td>
-                  <td>13400</td>
-                  <td>110</td>
-                  <td>122</td>
-                </tr>
-                <tr>
-                  <td>Treasury Board of Canada Secretariat</td>
-                  <td>11800</td>
-                  <td>113</td>
-                  <td>104</td>
-                </tr>
-                <tr>
-                  <td>Environment and Climate Change Canada</td>
-                  <td>12200</td>
-                  <td>120</td>
-                  <td>102</td>
-                </tr>
-                <tr>
-                  <td>Global Affairs Canada</td>
-                  <td>11000</td>
-                  <td>110</td>
-                  <td>100</td>
-                </tr>
-                <tr>
-                  <td>Immigration, Refugees and Citizenship Canada</td>
-                  <td>7275</td>
-                  <td>107</td>
-                  <td>68</td>
-                </tr>
-                <tr>
-                  <td>Library and Archives Canada</td>
-                  <td>7950</td>
-                  <td>119</td>
-                  <td>67</td>
-                </tr>
-                <tr>
-                  <td>Canadian Food Inspection Agency</td>
-                  <td>6675</td>
-                  <td>101</td>
-                  <td>66</td>
-                </tr>
-                <tr>
-                  <td>Shared Services Canada</td>
-                  <td>6000</td>
-                  <td>100</td>
-                  <td>60</td>
-                </tr>
-                <tr>
-                  <td>Public Health Agency of Canada</td>
-                  <td>6000</td>
-                  <td>103</td>
-                  <td>58</td>
-                </tr>
-                <tr>
-                  <td>Innovation, Science and Economic Development Canada</td>
-                  <td>6200</td>
-                  <td>119</td>
-                  <td>52</td>
-                </tr>
-                <tr>
-                  <td>Fisheries and Oceans Canada</td>
-                  <td>5450</td>
-                  <td>105</td>
-                  <td>52</td>
-                </tr>
-                <tr>
-                  <td>Transport Canada</td>
-                  <td>5575</td>
-                  <td>109</td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>National Defence</td>
-                  <td>5550</td>
-                  <td>109</td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>Canadian Space Agency</td>
-                  <td>3675</td>
-                  <td>111</td>
-                  <td>33</td>
-                </tr>
-                <tr>
-                  <td>Defence Construction Canada</td>
-                  <td>3150</td>
-                  <td>117</td>
-                  <td>27</td>
-                </tr>
-                <tr>
-                  <td>Natural Resources Canada</td>
-                  <td>2225</td>
-                  <td>111</td>
-                  <td>20</td>
-                </tr>
-                <tr>
-                  <td>National Capital Commission</td>
-                  <td>1700</td>
-                  <td>100</td>
-                  <td>17</td>
-                </tr>
-                <tr>
-                  <td>Canadian Coast Guard</td>
-                  <td>1575</td>
-                  <td>98</td>
-                  <td>16</td>
-                </tr>
-                <tr>
-                  <td>National Research Council Canada</td>
-                  <td>975</td>
-                  <td>75</td>
-                  <td>13</td>
-                </tr>
-                <tr>
-                  <td>Veterans Review and Appeal Board</td>
-                  <td>1425</td>
-                  <td>130</td>
-                  <td>11</td>
-                </tr>
-                <tr>
-                  <td>Canadian Heritage</td>
-                  <td>1400</td>
-                  <td>127</td>
-                  <td>11</td>
-                </tr>
-                <tr>
-                  <td>Infrastructure Canada</td>
-                  <td>1100</td>
-                  <td>110</td>
-                  <td>10</td>
-                </tr>
-                <tr>
-                  <td>Other</td>
-                  <td>675</td>
-                  <td>75</td>
-                  <td>9</td>
-                </tr>
-                <tr>
-                  <td>Employment and Social Development Canada</td>
-                  <td>925</td>
-                  <td>116</td>
-                  <td>8</td>
-                </tr>
-                <tr>
-                  <td>Agriculture and Agri-Food Canada</td>
-                  <td>950</td>
-                  <td>119</td>
-                  <td>8</td>
-                </tr>
-                <tr>
-                  <td>Federal Economic Development Agency for Southern Ontario</td>
-                  <td>525</td>
-                  <td>75</td>
-                  <td>7</td>
-                </tr>
-                <tr>
-                  <td>Correctional Service Canada</td>
-                  <td>725</td>
-                  <td>104</td>
-                  <td>7</td>
-                </tr>
-                <tr>
-                  <td>Canadian Intellectual Property Office</td>
-                  <td>625</td>
-                  <td>104</td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td>Veterans' Ombudsman (Office of the)</td>
-                  <td>675</td>
-                  <td>169</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>Translation Bureau</td>
-                  <td>675</td>
-                  <td>169</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>Service Canada</td>
-                  <td>425</td>
-                  <td>106</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>Military Grievances External Review Committee</td>
-                  <td>550</td>
-                  <td>138</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>Measurement Canada</td>
-                  <td>350</td>
-                  <td>117</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td>Impact Assessment Agency of Canada</td>
-                  <td>350</td>
-                  <td>117</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td>Public Safety Canada</td>
-                  <td>150</td>
-                  <td>75</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>Indigenous Services Canada</td>
-                  <td>150</td>
-                  <td>75</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>Immigration and Refugee Board of Canada</td>
-                  <td>275</td>
-                  <td>138</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>Canada Post</td>
-                  <td>150</td>
-                  <td>75</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>Canadian Army</td>
-                  <td>450</td>
-                  <td>225</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>Youth</td>
-                  <td>200</td>
-                  <td>200</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Western Economic Diversification Canada</td>
-                  <td>125</td>
-                  <td>125</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Women and Gender Equality Canada</td>
-                  <td>75</td>
-                  <td>75</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Royal Canadian Navy</td>
-                  <td>75</td>
-                  <td>75</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Royal Canadian Mounted Police</td>
-                  <td>75</td>
-                  <td>75</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Royal Canadian Air Force</td>
-                  <td>175</td>
-                  <td>175</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Superintendent of Bankruptcy Canada (Office of the)</td>
-                  <td>75</td>
-                  <td>75</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Information Commissioner (Office of the)</td>
-                  <td>75</td>
-                  <td>75</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Occupational Health and Safety Tribunal Canada</td>
-                  <td>75</td>
-                  <td>75</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Historic Sites and Monuments Board of Canada</td>
-                  <td>75</td>
-                  <td>75</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Canada School of Public Service</td>
-                  <td>125</td>
-                  <td>125</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Canadian Radio-Television and Telecommunications Commission</td>
-                  <td>75</td>
-                  <td>75</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Competition Bureau Canada</td>
-                  <td>75</td>
-                  <td>75</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Canadian International Trade Tribunal</td>
-                  <td>75</td>
-                  <td>75</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Canadian Human Rights Commission</td>
-                  <td>75</td>
-                  <td>75</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Canada Border Services Agency</td>
-                  <td>75</td>
-                  <td>75</td>
-                  <td>1</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <section id="services" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Register now</h2>
-            <p class="lead">
-              Does your department or agency block Google Suite tools? If so, you can still participate from your personal phone or computer using your personal email address. Sorry for the inconvenience.
-            </p>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='/thanks.html';}"></iframe>
-            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeb9qZOdJ9ubiJ2bBGHNiIP9QIOsiiEAKkHAPt7S5MD0Y_ZOA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd">
-              <fieldset>
-                <!-- Form -->
-                <input type="hidden" id="ID" name="ID">
-                <div class="form-group row">
-                  <label class="col-md-4 control-label" for="entry.1519223899">What is your first name?</label>
-                  <div class="col-md-8">
-                    <input id="name" name="entry.1519223899" style="width: 100%;" type="text" placeholder="" class="form-control input-md">
-                  </div>
+  <section id="services" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Register now</h2>
+          <p class="lead">
+            Does your department or agency block Google Suite tools? If so, you can still participate from your personal phone or computer using your personal email address. Sorry for the inconvenience.
+          </p>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='/thanks.html';}"></iframe>
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeb9qZOdJ9ubiJ2bBGHNiIP9QIOsiiEAKkHAPt7S5MD0Y_ZOA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd">
+            <fieldset>
+              <!-- Form -->
+              <input type="hidden" id="ID" name="ID">
+              <div class="form-group row">
+                <label class="col-md-4 control-label" for="entry.1519223899">What is your first name?</label>
+                <div class="col-md-8">
+                  <input id="name" name="entry.1519223899" style="width: 100%;" type="text" placeholder="" class="form-control input-md">
                 </div>
-                <div class="form-group row">
-                  <label class="col-md-4 control-label" for="entry.667534422">What is your last name?</label>
-                  <div class="col-md-8">
-                    <input id="email" style="width: 100%;" name="entry.667534422" type="text" placeholder="" class="form-control input-md">
-                  </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 control-label" for="entry.667534422">What is your last name?</label>
+                <div class="col-md-8">
+                  <input id="email" style="width: 100%;" name="entry.667534422" type="text" placeholder="" class="form-control input-md">
                 </div>
-                <div class="form-group row">
-                  <label class="col-md-4 control-label" for="entry.1194985071">What is your email address?</label>
-                  <div class="col-md-8">
-                    <input id="email" style="width: 100%;" name="entry.1194985071" type="text" placeholder="yourname@domain.ca" class="form-control input-md">
-                  </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 control-label" for="entry.1194985071">What is your email address?</label>
+                <div class="col-md-8">
+                  <input id="email" style="width: 100%;" name="entry.1194985071" type="text" placeholder="yourname@domain.ca" class="form-control input-md">
                 </div>
-                <div class="form-group row">
-                  <label class="col-md-4 control-label" for="entry.1218442580">In which Department/Agency do you work in?</label>
-                  <div class="col-md-8">
-                    <select id="org" name="entry.1218442580" class="form-control">
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 control-label" for="entry.1218442580">In which Department/Agency do you work in?</label>
+                <div class="col-md-8">
+                  <select id="org" name="entry.1218442580" class="form-control">
                                     <option disabled selected> -- Select an organization -- </option> 
                                     <option value="ASC">Accessibility Standards Canada</option>
                                     <option value="ATSSC">Administrative Tribunals Support Service of Canada</option>
@@ -716,62 +656,62 @@
                                     <option value="WAGE">Women and Gender Equality Canada</option>
                                     <option value="YOUTH">Youth</option>
                                  </select>
-                  </div>
                 </div>
-                <button class="btn btn-md btn-success mrgn-tp-md" type="submit" id="submit-form" onclick="myFunction()">Register</button>
-                <button class="btn btn-md btn-danger mrgn-tp-md" type="reset" value="Reset">Clear the form</button>
-                <div id="myDIV"></div>
-                <br />
-                <h4>
-                  Are you having technical issues with the Green Challenge? Have you not received any emails from the Green Challenge team? Please visit our <a href="techsupport.html">Technical Support</a> page.
-                </h4>
-          </div>
+              </div>
+              <button class="btn btn-md btn-success mrgn-tp-md" type="submit" id="submit-form" onclick="myFunction()">Register</button>
+              <button class="btn btn-md btn-danger mrgn-tp-md" type="reset" value="Reset">Clear the form</button>
+              <div id="myDIV"></div>
+              <br />
+              <h4>
+                Are you having technical issues with the Green Challenge? Have you not received any emails from the Green Challenge team? Please visit our <a href="techsupport.html">Technical Support</a> page.
+              </h4>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="greening">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Get Involved</h2>
-            <p class="lead">
-              <a href="mailto:?subject=Green Challenge 2020 - Telework Edition / Défi écologique 2020 - Édition télétravail &Body=Hi, please join me and register to the Green Challenge 2020. Registration info is available at https://cew-sce.github.io/2020/. / Bonjour, joins-toi à moi et participe au Défi écologique 2020. Inscris-toi au https://cew-sce.github.io/2020/fr.html.">Invite your teammates by email!</a>
-            </p>
-            <p class="lead">
-              <a href="https://www.canada.ca/en/treasury-board-secretariat/services/innovation/greening-government.html">Learn more about how we are greening government on Canada.ca!</a>
-            </p>
-          </div>
+  <section id="greening">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Get Involved</h2>
+          <p class="lead">
+            <a href="mailto:?subject=Green Challenge 2020 - Telework Edition / Défi écologique 2020 - Édition télétravail &Body=Hi, please join me and register to the Green Challenge 2020. Registration info is available at https://cew-sce.github.io/2020/. / Bonjour, joins-toi à moi et participe au Défi écologique 2020. Inscris-toi au https://cew-sce.github.io/2020/fr.html.">Invite your teammates by email!</a>
+          </p>
+          <p class="lead">
+            <a href="https://www.canada.ca/en/treasury-board-secretariat/services/innovation/greening-government.html">Learn more about how we are greening government on Canada.ca!</a>
+          </p>
         </div>
       </div>
-    </section>
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Centre for Greening Government - 2020</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Centre for Greening Government - 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myDIV");
-        if (x.innerHTML === "") {
-          x.innerHTML = "<b>Your registration is in. See you soon!</b>";
-        } else {
-          x.innerHTML = "";
-        }
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.innerHTML === "") {
+        x.innerHTML = "<b>Your registration is in. See you soon!</b>";
+      } else {
+        x.innerHTML = "";
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
 
 </html>
